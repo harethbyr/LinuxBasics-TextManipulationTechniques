@@ -3,7 +3,7 @@
 
 
 <h2>Description</h2>
-In this project we will go over the basics of Linux and ways we can navigate through Linux in a way where we can build fluency. We will go over plenty of different tools that can be utilized to make our lives easier when experimenting with this distribution. We will first start off with just the basic commands in Linux and eventually cover some text manipulation techniques in Kali to help us navigate and locate through files more efficiently. For this project we will specifically use the Kali Linux Distro.
+In this project we will go over the basics of Linux and ways we can navigate through Linux in a way where we can build fluency. We will go over plenty of different tools that can be utilized to make our lives easier when experimenting with this distribution. We will first start off with just the basic commands in Linux and eventually cover some text manipulation techniques in Kali to help us navigate and locate through files more efficiently. For this project specifically we will use the Kali Linux Distro.
 <br />
 
 
@@ -11,12 +11,44 @@ In this project we will go over the basics of Linux and ways we can navigate thr
 
 - <b>The Shell</b> 
 - <b>Basic Command Utilities</b>
+- <b>VirtualBox</b>
 
 <h2>Environments Used </h2>
 
-- <b>Kali Linux</b>
+- <b>Kali Linux Distro</b>
 
-<h2>Program walk-through:</h2>
+<h2>Linux Basic Commands:</h2>
+
+<p align="center">
+Launch the utility: <br/>
+<img src="" height="80%" width="80%" alt=""/>
+<br />
+<br />
+Select the disk:  <br/>
+<img src="" height="80%" width="80%" alt=""/>
+<br />
+<br />
+Enter the number of passes: <br/>
+<img src="" height="80%" width="80%" alt=""/>
+<br />
+<br />
+Confirm your selection:  <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Wait for process to complete (may take some time):  <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Sanitization complete:  <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Observe the wiped disk:  <br/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
+<h2>Text Manipulation Techniques:</h2>
 
 <p align="center">
 Launch the utility: <br/>
