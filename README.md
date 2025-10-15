@@ -3,13 +3,13 @@
 
 
 <h2>Description</h2>
-In this project we will go over the basics of Linux and ways we can navigate through Linux in a way where we can build fluency. We will go over plenty of different tools that can be utilized to make our lives easier when experimenting with this distribution. We will first start off with just the basic commands in Linux and eventually cover some text manipulation techniques in Kali to help us navigate and locate through files more efficiently. For this project specifically we will use the Kali Linux Distro.
+In this project we will go over the basics of Linux and ways we can navigate through Linux in a way where we can build fluency. We will go over plenty of different tools that can be utilized to make our lives easier when experimenting with this distribution. We will first start off with just the basic commands in Linux and eventually cover some text manipulation techniques in Kali to help us navigate and locate files and their contents more efficiently. For this project specifically we will use the Kali Linux Distro. Everything in this project is done in a virtually controlled environment.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>The Shell</b> 
+- <b>Terminal</b> 
 - <b>Basic Command Utilities</b>
 - <b>VirtualBox</b>
 
@@ -19,24 +19,24 @@ In this project we will go over the basics of Linux and ways we can navigate thr
 
 <h2>Linux Basic Commands:</h2>
 
-<p align="center">
-Launch the utility: <br/>
+<p align ="center">
+ To begin with, it is highly important to learn the basic command of Linux before getting into harder things. You need to know what goes on behind the scenes and how you can navigate through linux. Even the most basic commands can be used to guide us. In the image below, I entered "pwd" which stands for print working directory. What does PWD do? Print working directory outputs your current file location and directory. On the other hand, if you wanted to know which user you are logged in as, you can type the command "whoami" which prints out the user you are logged in as. <br/>
 <img src="https://i.imgur.com/s55qgw0.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
-Select the disk:  <br/>
+ In the image below, I used the command "ls" which stands for list and it lists out directory contents. This command is very useful because it allows you to search for different tools and information within the system. You can also use "ls -l" to display more information about directories like permissions or owner. Sometimes files will be hidden even when you list them out however, you can input the command "ls -la" to display all hidden files and detailed information about those files.  <br/>
 <img src="https://i.imgur.com/tiXFRfF.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
-Enter the number of passes: <br/>
+ Another highly important command that is utilized is "cd" which stands for change directory. This command is needed especially when you need to access different tools or files in different directories. In the image below, I was looking to access system configuration files, so I inputed the command "cd /etc" in which "/etc" is the directory that contains the system configuration files. Another cool trick is "cd .." which allows you to move up a directory. <br/>
 <img src="https://i.imgur.com/1BAhOpB.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
-Confirm your selection:  <br/>
+ Sometimes we can look for a file but we cannot find it. There are many commands that can assist with that! One of my favorite commands is that "locate" command, which displays the directory, path, and files. This is very useful because instead of going through every single directory and listing them out, we can use the locate command. Another useful command we can use is the "whereis" command which can also help us find the location of the tool or file.   <br/>
 <img src="https://i.imgur.com/UgblEQd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
+ Now that we covered some basics on navigating through the file system, we can go over creating files and one way we can do that is by using the "cat" command. CAT stands for concatenate in which it is used for displaying the contents of a file. However, we can use this command to not only view contents of a file, but to create files. As you can see in the image below, I have typed "cat > TheFastestSportsSedans" in which the ">" operator signals to create the file. After that it will put the system into interactive mode where you can input what ever you would like into the file and to exit the mode you can press "ctrl D". Looking at that image below, we can see the command "cat >> TheFastestSportsSedans"; the ">>" operator simply allows you to append to the file as you can see, I added "3.) Mercedes GT63S". Lastly, to view the contents of the file, you would just input "cat TheFastestSportsSedans" and it will list them.  <br/>
 <img src="https://i.imgur.com/gTas7qT.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
@@ -44,26 +44,23 @@ Wait for process to complete (may take some time):  <br/>
 <h2>Text Manipulation Techniques:</h2>
 
 <p align="center">
-Launch the utility: <br/>
+ In this section of the project we will go over some text manipulation techniques which in short allows us to modify text by using different tools. In the image below, I decided to "cat" the password list which contains over 80 thousand contents to work with. <br/>
 <img src="https://i.imgur.com/Fkk7x3a.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Select the disk:  <br/>
+ A useful command that we can use to help use navigate through our contents is the "nl" command which numbers the contents of the file in order. This can be useful if we wanted to know how many contents there are and allow us to reference any line in the file.  <br/>
 <img src="https://i.imgur.com/bMjsiF1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Enter the number of passes: <br/>
+ The first text manipulation technique we can use on password.lst is the "grep" command. This command can make our lives way easier because it simply filters out what we are looking for. In the image below, while using password.lst, I added the "| grep apple" after the initial "cat ..." command to specify that I am looking for passwords that have "apple" in them. This can be very useful if you are looking for something specific since some of these files can contain many contents. <br/>
 <img src="https://i.imgur.com/wIsVYaf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
+ Sometimes people use regular words and word it into a different form to create a password. For example a regular dictionary word would be soul, but a user could use s0ul as their password by replacing the "o" with a "0". The "sed" command allows us to filter through those common passwords and help us find the passwords that are rephrased or written in a different form. In the image below, I used "sed s/o/0/g ...". The "s" stands for substitute, in which we are substituting the "o" with a "0" to help us find the specific passwords written as dictionary but with different letters or numbers. This can be beneficial for us when navigating through contents, as it allows us to find contents that are worded differently. Lastly the "g" stands for global which substitutes at every match of the line. <br/>
 <img src="https://i.imgur.com/8p2u6rY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/UwD48Wh.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
+
 
 
 <!--
