@@ -10,29 +10,30 @@ In this project we will go over the basics of Linux and ways we can navigate thr
 <h2>Languages and Utilities Used</h2>
 
 - <b>Terminal</b> 
-- <b>Basic Command Utilities</b>
-- <b>VirtualBox</b>
+- <b>Basic Command Utilities (ls, cd, locate, whereis, cat, pwd)</b>
+- <b>Oracle VirtualBox</b>
 
 <h2>Environments Used </h2>
 
 - <b>Kali Linux Distro</b>
 
+
 <h2>Linux Basic Commands:</h2>
 
 <p align ="center">
- To begin with, it is highly important to learn the basic command of Linux before getting into harder things. You need to know what goes on behind the scenes and how you can navigate through linux. Even the most basic commands can be used to guide us. In the image below, I entered "pwd" which stands for print working directory. What does PWD do? Print working directory outputs your current file location and directory. On the other hand, if you wanted to know which user you are logged in as, you can type the command "whoami" which prints out the user you are logged in as. <br/>
+ To begin with, the PWD command stands for "Print Working Directory" which outputs the current directory of the user. The "whoami" command prints out what the user is logged in as. <br/>
 <img src="https://i.imgur.com/s55qgw0.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
- In the image below, I used the command "ls" which stands for list and it lists out directory contents. This command is very useful because it allows you to search for different tools and information within the system. You can also use "ls -l" to display more information about directories like permissions or owner. Sometimes files will be hidden even when you list them out however, you can input the command "ls -la" to display all hidden files and detailed information about those files.  <br/>
+ The "ls" command prints out a list of files and directories. "ls -l" outputs more information about the files and directories including owner and permissions and "ls -la outputs hidden files. <br/>
 <img src="https://i.imgur.com/tiXFRfF.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
- Another highly important command that is utilized is "cd" which stands for change directory. This command is needed especially when you need to access different tools or files in different directories. In the image below, I was looking to access system configuration files, so I inputed the command "cd /etc" in which "/etc" is the directory that contains the system configuration files. Another cool trick is "cd .." which allows you to move up a directory. <br/>
+ Another command that is ulitized in Linux is "cd" which stands for change directory. This commands enables you to move to a different folder where different contents are stored. <br/>
 <img src="https://i.imgur.com/1BAhOpB.png" height="80%" width="80%" alt=""/>
 <br />
 <br />
- Sometimes we can look for a file but we cannot find it. There are many commands that can assist with that! One of my favorite commands is that "locate" command, which displays the directory, path, and files. This is very useful because instead of going through every single directory and listing them out, we can use the locate command. Another useful command we can use is the "whereis" command which can also help us find the location of the tool or file.   <br/>
+ The locate command searches the directory, path, and files by name. This is very useful because instead of going through every single directory and listing them out, we can use the locate command. Another useful command we can use is the "whereis" command which can also help us find the location of the tool or file.   <br/>
 <img src="https://i.imgur.com/UgblEQd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
