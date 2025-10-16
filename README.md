@@ -53,7 +53,7 @@ In this project we will go over the basics of Linux and ways we can navigate thr
 <img src="https://i.imgur.com/bMjsiF1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
- The first text manipulation technique we can use on password.lst is the "grep" command. This command can make our lives way easier because it simply filters out what we are looking for. In the image below, while using password.lst, I added the "| grep apple" after the initial "cat ..." command to specify that I am looking for passwords that have "apple" in them. This can be very useful if you are looking for something specific since some of these files can contain many contents. <br/>
+ The first text manipulation technique we can use on is the "grep" command. This command can make our lives way easier because it simply filters out what we are looking for. In the image below, while using password.lst, I added the "| grep apple" after the initial "cat ..." command to specify that I am looking for passwords that have "apple" in them. This can be very useful if you are looking for something specific since some of these files can contain many contents. <br/>
 <img src="https://i.imgur.com/wIsVYaf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
